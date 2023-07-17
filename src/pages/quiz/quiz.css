@@ -22,7 +22,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
   padding: 20px;
   color: black;
   background: lightgray;
@@ -76,8 +75,8 @@
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  color: #fcc822;
-  background-color: black;
+  color: #fff;
+  background-color: #fcc822;
   padding: 15px;
 }
 .next-question:hover {

@@ -41,6 +41,7 @@
 }
 .solve {
   border: 1px solid #fcc822;
+  border-radius: 5px;
   background-color: #fcc822;
   color: #fff;
 }
@@ -80,7 +81,6 @@
   align-items: center;
   padding: 20px;
   margin: 20px;
-  border: 2px solid black;
   border-radius: 10px;
   width: 300px;
   background-color: #f5f5f5;
