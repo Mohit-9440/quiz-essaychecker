@@ -1,4 +1,5 @@
 import { useSearchParams } from 'react-router-dom';
+import './result.css';
 
 export const Result = () => {
   const [searchParams] = useSearchParams();
@@ -6,9 +7,15 @@ export const Result = () => {
   const totalQuestions = parseInt(searchParams.get('totalQuestions'), 10) || 0;
 
   return (
-    <div>
-      <h1>Quiz Result</h1>
-      <h2>Your Score: {score} out of {totalQuestions}</h2>
+    <div className="result-page">
+      <h1 className="result-heading">Quiz Result</h1>
+      <div className="result-container">
+        <div className="score-card">
+          <h2 className="score-title">Your Score</h2>
+          <div className="score">{score}</div>
+          <div className="out-of">out of {totalQuestions}</div>
+        </div>
+      </div>
     </div>
   );
 };
