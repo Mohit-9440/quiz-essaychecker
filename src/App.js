@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { Home } from './pages/home/Home';
@@ -9,7 +10,7 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/quiz" element={<Quiz />} />
+        <Route path="/quiz/:packId" element={<Quiz />} />
         <Route path="/result" element={<Result />} />
       </Routes>
     </Router>
