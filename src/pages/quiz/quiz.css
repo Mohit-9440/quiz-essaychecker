@@ -8,7 +8,7 @@
     height: 150px;
     background-color: #fcc822;
     color: white;
-    padding: 20px 40px 20px 40px;
+    padding: 40px 40px 20px 80px;
     font-size: 22px;
 }
 .quiz-page-center{
@@ -78,7 +78,7 @@
     cursor: pointer;
     color: #fcc822;
     background-color: black;
-    padding: 10px;
+    padding: 15px;
   }
   .next-question:hover{
     color: black;
