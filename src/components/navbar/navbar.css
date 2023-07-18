@@ -105,6 +105,9 @@
         width: 50%;
         justify-content: flex-start;
     }
+    .logo{
+        width: 120px;
+    }
     .nav-right{
         width: 50%;
     }
