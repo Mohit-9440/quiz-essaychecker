@@ -51,4 +51,67 @@
 }
 .logo{
     width: 150px;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-left{
+        width: 25%;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-link h2{
+        font-size: 14px;
+    }
+    .login-button{
+        font-size: 15px;
+        width: auto;
+    }
+    .nav-center{
+        width: 50%;
+    }
+    .nav-right{
+        width: 25%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .nav-left{
+        width: 20%;
+        margin-left: 5px;
+    }
+    .logo{
+        width: 100px;
+    }
+    .nav-center{
+        width: 60%;
+        justify-content: space-evenly;
+    }
+    .nav-right{
+        width: 20%;
+    }
+    .login-button-wrapper{
+        margin-right: 10px;
+    }
+    .login-button{
+        width: auto;
+    }
+    .nav-link h2{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .nav-left{
+        width: 50%;
+        justify-content: flex-start;
+    }
+    .nav-right{
+        width: 50%;
+    }
+    .nav-center{
+        display: none;
+    }
+    .quiz-pack{
+        width: 220px;
+    }
 }

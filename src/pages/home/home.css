@@ -9,12 +9,15 @@
   width: 50%;
   height: 100%;
   display: flex;
-  margin-left: 200px;
+  margin-left: 80px;
   flex-direction: column;
   justify-content: center;
 }
 .home-page-left-heading {
   font-size: 22px;
+}
+.home-page-left-heading h1{
+  font-size: 32px;
 }
 .home-page-left-subheading {
   color: grey;
@@ -55,8 +58,8 @@
   color: #fcc822;
 }
 .home-icon {
-  height: 400px;
-  width: 450px;
+  height: auto;
+  width: auto;
 }
 /* Quiz Section */
 
@@ -82,7 +85,7 @@
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
-  width: 300px;
+  width: 260px;
   background-color: #f5f5f5;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease;
@@ -110,4 +113,45 @@
   color: #fff;
   background-color: #fcc822;
   border: none;
+}
+
+@media screen and (max-width: 768px){
+  .home-page-left{
+    margin-left: 20px;
+    width: 60%;
+  }
+  .home-page-right{
+    width: 40%;
+  }
+  .home-page-left-heading{
+    font-size: 22px;
+  }
+  .home-page-left-subheading{
+    margin: 20px 0 20px 0;
+  }
+  .home-page-left-subheading p{
+    font-size: 15px;
+  }
+  .home-page-left-heading h1{
+    font-size: 30px;
+  }
+  .home-icon{
+    width: 300px;
+    height: auto;
+  }
+  .quiz-pack{
+    width: 180px;
+  }
+  .quiz-pack h3{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .home-page-right{
+    display: none;
+  }
+  .home-page-left{
+    width: 100%;
+  }
 }
