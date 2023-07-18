@@ -5,11 +5,13 @@
   width: auto;
 }
 .quiz-page-top {
+  display: flex;
+  align-items: center;
   height: 150px;
   background-color: #fcc822;
   color: white;
-  padding: 40px 40px 20px 80px;
-  font-size: 22px;
+  padding: 20px 40px 20px 40px;
+  font-size: 20px;
 }
 .quiz-page-center {
   display: flex;
@@ -27,7 +29,7 @@
   background: lightgray;
   font-weight: 600;
   font-size: 20px;
-  width: 150px;
+  width: 120px;
   text-transform: uppercase;
   border-radius: 5px;
 }
@@ -82,4 +84,38 @@
 .next-question:hover {
   color: black;
   background-color: #fcc822;
+}
+@media screen and (max-width: 768px) {
+  .quiz-options{
+    width: 80px;
+    font-size: 14px;
+    padding: 15px;
+  }
+  .quiz-page-top{
+    font-size: 14px;
+    height: 130px;
+    padding: 20px;
+  }
+  .quiz-page-center{
+    margin: 12px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .quiz-page-top{
+    height: 100px;
+  }
+  .quiz-page-top h1{
+    font-size: 25px;
+  }
+  .quiz-page-center{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .quiz-options{
+    width: 120px;
+    margin: 10px;
+  }
 }

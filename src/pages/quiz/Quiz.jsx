@@ -70,7 +70,7 @@ export const Quiz = () => {
         {currentQuestionData && (
           <div>
             <div className="quiz-page-top">
-              <h1>{currentQuestionData.q} :<span style={{'color': "black", "margin-left": "50px"}}>{currentQuestionData.word}</span></h1>
+              <h1>{currentQuestionData.q}  <span style={{'color': "black", "margin-left": "20px"}}>{currentQuestionData.word}</span></h1>
             </div>
             <div className="quiz-page-center">
               {Object.entries(currentQuestionData.options || {}).map(([optionKey, option]) => (
